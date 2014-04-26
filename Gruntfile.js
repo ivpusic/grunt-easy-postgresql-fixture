@@ -30,7 +30,7 @@ module.exports = function (grunt) {
           out: 'backup.sql'
         },
         action: 'save'
-      },
+      }
     }
   });
 
