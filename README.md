@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # grunt-easy-postgresql-fixture
 
 > Grunt task for easy-postgresql-fixture plugin. It helps to you load and save you fixtures
@@ -38,30 +37,6 @@ grunt.initConfig({
 
 ### Options
 
-#### options.host
-Type: `String`
-Default value: `'127.0.0.1'`
-
-Database host
-
-#### options.port
-Type: `Number`
-Default value: `27017`
-
-Database port
-
-#### options.username
-Type: `String`
-Default value: `''`
-
-Username for authentication
-
-#### options.password
-Type: `String`
-Default value: `''`
-
-Password for authentication
-
 #### options.database
 **Required**
 Type: `String`
@@ -72,22 +47,14 @@ Database for work with
 Type: `Path`
 Default value: `'Current directory'`
 
-Path on which fixture data will be saved if running `save` action,
-or in case or `load` action, path from which fixture files will be loaded into database.
+Directory in which fixture data will be saved if running `save` action,
+or in case or `load` action, directory from which fixture data will be loaded into database.
 
-#### options.override
-Type: `Boolean`
-Default value: `false`
+#### options.out
+Type: `String`
+Default value: `'backup.sql'`
 
-If fixture data already exist, override or not?
-
-### Collections
-
-#### collections
-Type: `Array`
-**Required**
-
-Array of collections to work with.
+Filename in which fixture data will be saved (case for `save` action), or filename from which data will be loaded and saved into database (case for `load` action).
 
 ### Actions
 
@@ -102,12 +69,11 @@ Action to execute. Either `save` or `load`.
 
 ```js
   grunt.initConfig({
-    // Configuration to be run (and then tested).
     easy_postgresql_fixture: {
       load: {
         options: {
-          database: 'ivpusic',
-          dir: '/home/ivpusic/projects/bidding/server/modules/grunt-easy-postgresql-fixture',
+          database: 'test',
+          dir: './fixtures',
           out: 'backup.sql'
         },
         action: 'load'
@@ -115,8 +81,8 @@ Action to execute. Either `save` or `load`.
 
       save: {
         options: {
-          database: 'ivpusic',
-          dir: '/home/ivpusic/projects/bidding/server/modules/grunt-easy-postgresql-fixture',
+          database: 'test',
+          dir: './fixtures',
           out: 'backup.sql'
         },
         action: 'save'
