@@ -1,6 +1,6 @@
 {
   "name": "grunt-easy-postgresql-fixture",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Grunt task for easy-postgresql-fixture lib",
   "main": "Gruntfile.js",
   "directories": {
