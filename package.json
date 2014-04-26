@@ -1,0 +1,35 @@
+{
+  "name": "grunt-easy-postgresql-fixture",
+  "version": "0.0.0",
+  "description": "Grunt task for easy-postgresql-fixture lib",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "easy-fixture": "~1.0.0",
+    "easy-postgresql-fixture": "~1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ivpusic/grunt-easy-postgresql-fixture.git"
+  },
+  "keywords": [
+    "grunt",
+    "postgres",
+    "postgresql",
+    "fixture",
+    "fixtures",
+    "task"
+  ],
+  "author": "Ivan Pusic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivpusic/grunt-easy-postgresql-fixture/issues"
+  },
+  "homepage": "https://github.com/ivpusic/grunt-easy-postgresql-fixture"
+}
